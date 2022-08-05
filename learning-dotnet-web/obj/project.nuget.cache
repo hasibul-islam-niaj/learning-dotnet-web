@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "5Y5Ypjkcx0oyffSdvJpjQDhbVvubDnDrrriuE49i2hI/x/2jKpb7+JVbnn3P0x+8rnkqMf6VKRFnbdeTgXPbTQ==",
+  "dgSpecHash": "f6qGawt3kwMNnLVEIUqoe0smylvj/TQ3jSSNOj4A0RSJKln1xlZl4X41EQo7YD4TwpWWM5RssxjWZ0HdgwPThg==",
   "success": true,
   "projectFilePath": "/home/bs711/hasibul/RiderProjects/learning-dotnet-web/learning-dotnet-web/learning-dotnet-web.csproj",
   "expectedPackageFiles": [
+    "/home/bs711/.nuget/packages/bootstrap/4.6.0/bootstrap.4.6.0.nupkg.sha512",
     "/home/bs711/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
+    "/home/bs711/.nuget/packages/jquery/3.0.0/jquery.3.0.0.nupkg.sha512",
     "/home/bs711/.nuget/packages/microsoft.entityframeworkcore/6.0.6/microsoft.entityframeworkcore.6.0.6.nupkg.sha512",
     "/home/bs711/.nuget/packages/microsoft.entityframeworkcore.abstractions/6.0.6/microsoft.entityframeworkcore.abstractions.6.0.6.nupkg.sha512",
     "/home/bs711/.nuget/packages/microsoft.entityframeworkcore.analyzers/6.0.6/microsoft.entityframeworkcore.analyzers.6.0.6.nupkg.sha512",
@@ -21,6 +23,7 @@
     "/home/bs711/.nuget/packages/microsoft.extensions.primitives/6.0.0/microsoft.extensions.primitives.6.0.0.nupkg.sha512",
     "/home/bs711/.nuget/packages/npgsql/6.0.5/npgsql.6.0.5.nupkg.sha512",
     "/home/bs711/.nuget/packages/npgsql.entityframeworkcore.postgresql/6.0.5/npgsql.entityframeworkcore.postgresql.6.0.5.nupkg.sha512",
+    "/home/bs711/.nuget/packages/popper.js/1.16.1/popper.js.1.16.1.nupkg.sha512",
     "/home/bs711/.nuget/packages/system.collections.immutable/6.0.0/system.collections.immutable.6.0.0.nupkg.sha512",
     "/home/bs711/.nuget/packages/system.diagnostics.diagnosticsource/6.0.0/system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
     "/home/bs711/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"

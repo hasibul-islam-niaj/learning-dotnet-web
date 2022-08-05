@@ -1,0 +1,45 @@
+﻿<div class="text-center">
+    <h3>All Users (@ViewBag.users.Count.ToString("D2"))</h3>
+    <hr/>
+    
+    <div class="table-responsive">
+        <table class="table table-bordered table-striped">
+                <thead>
+                <tr>
+                    <th>Sl.</th>
+                    <th>Name</th>
+                    <th>Designation</th>
+                    <th>Phone</th>
+                    <th>Email</th>
+                    <th class="text-end"><a asp-controller="User" asp-action="New" class="btn btn-success btn-sm">New</a></th>
+                </tr>
+                </thead>
+                <tbody>
+                @{
+                    if (ViewBag.users != null)
+                    {
+                        foreach (var user in ViewBag.users)
+                        {
+                            <tr>
+                                <td>@user.Id</td>
+                                <td>@user.UserName</td>
+                                <td>@user.Designation</td>
+                                <td>@user.Phone</td>
+                                <td>@user.Email</td>
+                                <td class="text-end">
+                                    <form method="post" asp-controller="User" asp-action="Delete">
+                                        <input type="hidden" name="Id" value="@user.Id"/>
+                                        <div class="btn-group">
+                                            <button type="submit" class="btn btn-sm btn-danger">Delete</button>
+                                            <a asp-controller="User" asp-action="Edit" asp-route-id="@user.Id" class="btn btn-sm btn-primary">Edit</a>
+                                        </div>
+                                    </form>
+                                </td>
+                            </tr>
+                        }
+                    }
+                }
+                </tbody>
+            </table>
+    </div>
+</div>

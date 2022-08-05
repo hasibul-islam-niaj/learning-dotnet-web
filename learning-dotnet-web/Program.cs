@@ -1,17 +1,20 @@
+using learning_dotnet_web.Repositories;
 using learning_dotnet_web.Data;
-using learning_dotnet_web.Services.Home;
-using Microsoft.EntityFrameworkCore;
+using learning_dotnet_web.Services;
 
 var builder = WebApplication.CreateBuilder(args);
+
+// Database context
+builder.Services.AddDbContext<LearningContext>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-// Service registry
-builder.Services.AddSingleton<AuthorService>();
+// Repository registry
+builder.Services.AddScoped<UserRepository>();
 
-// Database context
-builder.Services.AddDbContext<LearningContext>();
+// Service registry
+builder.Services.AddScoped<UserService>();
 
 var app = builder.Build();
 
@@ -32,6 +35,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=User}/{action=All}/{id?}");
 
 app.Run();
