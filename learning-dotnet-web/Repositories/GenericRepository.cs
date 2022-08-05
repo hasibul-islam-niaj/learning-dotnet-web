@@ -7,7 +7,8 @@ public class GenericRepository<T> where T : class
 {
     private readonly LearningContext _context;
     private readonly DbSet<T> _table;
-    public GenericRepository(LearningContext context)
+
+    protected GenericRepository(LearningContext context)
     {
         _context = context;
         _table = _context.Set<T>();
