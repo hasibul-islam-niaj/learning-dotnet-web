@@ -32,10 +32,9 @@ public class UserApiController : Controller
         {
             _userService.Save(user);
             return Created("/api/users", user);
+            // return Ok(user);
         }
-        else
-        {
-            return BadRequest(ModelState);
-        }
+
+        return BadRequest(ModelState);
     }
 }

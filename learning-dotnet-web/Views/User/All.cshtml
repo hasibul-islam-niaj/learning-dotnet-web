@@ -15,13 +15,17 @@
                 </tr>
                 </thead>
                 <tbody>
+                @{ int serialNumber = 1; }
                 @{
                     if (ViewBag.users != null)
                     {
                         foreach (var user in ViewBag.users)
                         {
                             <tr>
-                                <td>@user.Id</td>
+                                <td>
+                                    @serialNumber.ToString("D2")
+                                    @{ serialNumber++;}
+                                </td>
                                 <td>@user.UserName</td>
                                 <td>@user.Designation</td>
                                 <td>@user.Phone</td>
