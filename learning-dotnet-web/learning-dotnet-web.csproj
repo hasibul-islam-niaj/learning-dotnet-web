@@ -20,4 +20,12 @@
       <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="6.0.5" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Pages" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Views\hrm\ed\Employee\New.cshtml" />
+    </ItemGroup>
+
 </Project>

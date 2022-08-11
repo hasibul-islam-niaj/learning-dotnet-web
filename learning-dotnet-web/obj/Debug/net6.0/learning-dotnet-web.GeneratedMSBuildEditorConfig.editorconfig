@@ -15,6 +15,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /home/bs711/hasibul/RiderProjects/learning-dotnet-web/learning-dotnet-web
 build_property._RazorSourceGeneratorDebug = 
 
+[/home/bs711/hasibul/RiderProjects/learning-dotnet-web/learning-dotnet-web/Views/Employee/New.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wbG95ZWUvTmV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/bs711/hasibul/RiderProjects/learning-dotnet-web/learning-dotnet-web/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

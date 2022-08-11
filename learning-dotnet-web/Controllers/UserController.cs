@@ -24,6 +24,7 @@ public class UserController : Controller
         ViewBag.Title = "All Users";
         ViewBag.Users = users;
         
+        _logger.LogInformation("User All - View rendering");
         return View();
     }
 
